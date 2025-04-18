@@ -1,0 +1,20 @@
+{
+  "name": "GrocyGo - Online Grocery Store",
+  "short_name": "GrocyGo",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#27ae60",
+  "icons": [
+    {
+      "src": "icons/1st.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/2nd.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

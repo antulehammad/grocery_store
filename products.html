@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GrocyGo - Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🥦 GrocyGo</div>
+    <nav class="nav">
+      <a href="index.html"><i data-lucide="home"></i> Home</a>
+      <a href="products.html"><i data-lucide="shopping-bag"></i> Shop</a>
+      <a href="cart.html"><i data-lucide="shopping-cart"></i> Cart</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="page-title">Grocery Items</h2>
+    <section class="product-grid">
+      
+      <div class="product-card">
+        <img src="images/milk.jpeg" alt="Milk">
+        <h3>Milk (1L)</h3>
+        <p>$1.5</p>
+        <input type="number" min="1" value="1" id="qty-Milk">
+        <button onclick="addToCart('Milk (1L)', 1.5, 'qty-Milk')">Add</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/apple.jpeg" alt="Apples">
+        <h3>Apples (1kg)</h3>
+        <p>$3.0</p>
+        <input type="number" min="1" value="1" id="qty-Apples">
+        <button onclick="addToCart('Apples (1kg)', 3.0, 'qty-Apples')">Add</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/banana.jpeg" alt="Bananas">
+        <h3>Bananas (6 pcs)</h3>
+        <p>$2.0</p>
+        <input type="number" min="1" value="1" id="qty-Bananas">
+        <button onclick="addToCart('Bananas (6 pcs)', 2.0, 'qty-Bananas')">Add</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/rice.jpeg" alt="Rice">
+        <h3>Rice (5kg)</h3>
+        <p>$8.0</p>
+        <input type="number" min="1" value="1" id="qty-Rice">
+        <button onclick="addToCart('Rice (5kg)', 8.0, 'qty-Rice')">Add</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/sugar.jpeg" alt="Sugar">
+        <h3>Sugar (1kg)</h3>
+        <p>$1.8</p>
+        <input type="number" min="1" value="1" id="qty-Sugar">
+        <button onclick="addToCart('Sugar (1kg)', 1.8, 'qty-Sugar')">Add</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/cookingoil.jpeg" alt="Cooking Oil">
+        <h3>Cooking Oil (1L)</h3>
+        <p>$3.5</p>
+        <input type="number" min="1" value="1" id="qty-CookingOil">
+        <button onclick="addToCart('Cooking Oil (1L)', 3.5, 'qty-CookingOil')">Add</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/bread.jpeg" alt="Bread">
+        <h3>Bread (Loaf)</h3>
+        <p>$2.5</p>
+        <input type="number" min="1" value="1" id="qty-Bread">
+        <button onclick="addToCart('Bread (Loaf)', 2.5, 'qty-Bread')">Add</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/egg.jpeg" alt="Eggs">
+        <h3>Eggs (Dozen)</h3>
+        <p>$4.0</p>
+        <input type="number" min="1" value="1" id="qty-Eggs">
+        <button onclick="addToCart('Eggs (Dozen)', 4.0, 'qty-Eggs')">Add</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/tomato.jpeg" alt="Tomatoes">
+        <h3>Tomatoes (1kg)</h3>
+        <p>$2.2</p>
+        <input type="number" min="1" value="1" id="qty-Tomatoes">
+        <button onclick="addToCart('Tomatoes (1kg)', 2.2, 'qty-Tomatoes')">Add</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/potato.jpeg" alt="Potatoes">
+        <h3>Potatoes (1kg)</h3>
+        <p>$1.5</p>
+        <input type="number" min="1" value="1" id="qty-Potatoes">
+        <button onclick="addToCart('Potatoes (1kg)', 1.5, 'qty-Potatoes')">Add</button>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

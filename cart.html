@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cart - GrocyGo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🥦 GrocyGo</div>
+    <nav class="nav">
+      <a href="index.html"><i data-lucide="home"></i> Home</a>
+      <a href="products.html"><i data-lucide="shopping-bag"></i> Shop</a>
+      <a href="cart.html" class="cart-link">
+        <i data-lucide="shopping-cart"></i> Cart
+        <span id="cart-count" class="cart-badge">0</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <h2 class="page-title">Your Cart</h2>
+    <section id="cart-items" class="cart-grid"></section>
+    <div class="cart-summary">
+      <p><strong>Total: $<span id="total">0</span></strong></p>
+      <button onclick="checkout()" class="btn-primary">Checkout</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(reg => console.log("✅ Service Worker registered"))
+        .catch(err => console.error("❌ Registration failed", err));
+    }
+  </script>
+  
+  <script>lucide.createIcons();</script>
+</body>
+</html>

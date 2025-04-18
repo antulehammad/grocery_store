@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GrocyGo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.json">
+  <!-- Lucide Script -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">🥦 GrocyGo</div>
+    <nav class="nav">
+      <a href="index.html"><i data-lucide="home"></i> Home</a>
+      <a href="products.html"><i data-lucide="shopping-bag"></i> Shop</a>
+      <a href="cart.html" class="cart-link">
+        <i data-lucide="shopping-cart"></i> Cart
+        <span id="cart-count" class="cart-badge">0</span>
+      </a>
+      <a href="about.html"><i data-lucide="info"></i> About</a>
+      <a href="contact.html"><i data-lucide="mail"></i> Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="hero">
+    <section class="hero-text">
+      <h1>Fresh Groceries Delivered Fast</h1>
+      <p>Your daily essentials delivered at your doorstep within hours. Save time, shop smart!</p>
+      <a href="products.html" class="btn-primary">Shop Now</a>
+    </section>
+    <img src="images/home.png" alt="GrocyGo Banner" class="hero-img" />
+
+  
+
+  </main>
+
+  <!-- Your custom JS -->
+  <script src="script.js"></script>
+  
+  
+
+  <!-- Activate Lucide Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(reg => console.log("✅ Service Worker registered:", reg))
+      .catch(err => console.error("❌ Registration failed:", err));
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - GrocyGo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🥦 GrocyGo</div>
+    <nav class="nav">
+      <a href="index.html"><i data-lucide="home"></i> Home</a>
+      <a href="products.html"><i data-lucide="shopping-bag"></i> Shop</a>
+      <a href="cart.html"><i data-lucide="shopping-cart"></i> Cart</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-card">
+      <h2>Our Mission</h2>
+      <p>
+        At GrocyGo, we’re redefining grocery shopping. We provide farm-fresh produce,
+        pantry essentials, and household goods — all delivered with care, convenience, and
+        speed. Our mission is to help families save time and eat better without compromise.
+      </p>
+      <p>
+        Locally sourced. Delivered fresh. Trusted by thousands.
+      </p>
+    </section>
+  </main>
+
+  <script>lucide.createIcons();</script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(reg => console.log("✅ Service Worker registered"))
+        .catch(err => console.error("❌ Registration failed", err));
+    }
+  </script>
+  
+</body>
+</html>
